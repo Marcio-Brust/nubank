@@ -42,7 +42,7 @@ const config: Config = {
         },
         horizontal: {
           from: {
-            transform: "rotate(90deg) rotatex(50deg) rotatey(-40deg)",
+            transform: "rotate(90deg) rotatex(40deg) rotatey(-50deg)",
           },
           to: {
             transform: "rotate(0deg) rotatex(0deg) rotatey(0deg)",
