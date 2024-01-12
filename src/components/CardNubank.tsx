@@ -11,40 +11,98 @@ const CardNubank = () => {
 
   return (
     <section className="grid place-items-center  w-full max-sm:h-60">
-      <div
-        className={`w-80 h-40 rounded-xl ${colors} shadow-black shadow-2xl p-2 grid mb-56  ${
-          active ? "animate-float" : ""
-        }
-          ${
-            position
-              ? "animate-vertical"
-              : !active && !position
-              ? position === undefined
-                ? ""
-                : "animate-horizontal"
-              : ""
-          } 
-        max-sm:fixed max-sm:-mb-0 `}
-      >
-        <div className="text-white  grid place-items-end ">
-          <Image src={masterCard} alt="card" width={50} height={0} priority />
-          <p className="text-[10px]">mastercard</p>
+      {position ? (
+        <div
+          className={` w-40 h-80    ${
+            active ? "animate-float" : ""
+          }  max-sm:fixed`}
+        >
+          <div
+            className={`w-40 h-80 rounded-xl ${colors} shadow-black shadow-2xl p-2 grid 
+          
+          ${position ? "animate-vertical" : ""}
+         `}
+          >
+            <div className="text-white  grid justify-start ">
+              <div className="flex-1 justify-center">
+                <div className="flex p-2">
+                  <Image
+                    src={masterCard}
+                    alt="card"
+                    width={50}
+                    height={0}
+                    priority
+                  />
+
+                  <Image
+                    src={chip}
+                    alt="img"
+                    width={0}
+                    height={0}
+                    priority
+                    className="transform scale-100 ml-3"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="grid items-end p-2">
+              <p className="text-[12px] text-white font-semibold">{name}</p>
+              <Image
+                src={logoNubank}
+                alt="card"
+                width={50}
+                height={0}
+                priority
+              />
+            </div>
+          </div>
         </div>
-        <div className="ml-5">
-          <Image
-            src={chip}
-            alt="img"
-            width={0}
-            height={0}
-            priority
-            className="transform scale-150 ml-3"
-          />
+      ) : (
+        <div
+          className={` w-80 h-40   ${
+            position === undefined ? "" : !position ? "animate-horizontal" : ""
+          }  max-sm:fixed`}
+        >
+          <div
+            className={`w-80 h-40 rounded-xl ${colors} shadow-black shadow-2xl p-2 grid  ${
+              active ? "animate-float" : ""
+            }
+        
+        `}
+          >
+            <div className="text-white  grid justify-end ">
+              <Image
+                src={masterCard}
+                alt="card"
+                width={50}
+                height={0}
+                priority
+              />
+            </div>
+            <div className="ml-5">
+              <Image
+                src={chip}
+                alt="img"
+                width={0}
+                height={0}
+                priority
+                className="transform scale-150 ml-3"
+              />
+            </div>
+            <div className="flex gap-3 items-center ml-5">
+              <Image
+                src={logoNubank}
+                alt="card"
+                width={50}
+                height={0}
+                priority
+              />
+              <p className="text-[12px] text-white font-semibold">{name}</p>
+            </div>
+          </div>
         </div>
-        <div className="flex gap-3 items-center ml-5">
-          <Image src={logoNubank} alt="card" width={50} height={0} priority />
-          <p className="text-[12px] text-white font-semibold">{name}</p>
-        </div>
-      </div>
+      )}
     </section>
   );
 };

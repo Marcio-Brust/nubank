@@ -23,6 +23,7 @@ const config: Config = {
       },
       animation: {
         float: "float 1s ease-in-out infinite",
+        floatVertical: "floatVertical 1s ease-in-out infinite",
         vertical: "vertical 0.8s ease-in-out forwards",
         horizontal: "horizontal 0.8s ease-in-out forwards",
       },
@@ -31,13 +32,21 @@ const config: Config = {
           "0%, 100%": { transform: "translatey(0)" },
           "50%": { transform: "translatey(-50px)" },
         },
+        floatVertical: {
+          "0%, 100%": { transform: "translatey(0)" },
+          "50%": { transform: "translatey(-20px)" },
+        },
         vertical: {
-          to: { transform: "rotate(90deg)" },
-          from: { transform: "rotate(0deg)" },
+          from: { transform: "rotate(-90deg)  rotatex(0deg) rotatey(0deg)" },
+          to: { transform: "rotate(-50deg) rotatex(50deg) rotatey(40deg)" },
         },
         horizontal: {
-          to: { transform: "rotate(0deg)" },
-          from: { transform: "rotate(90deg)" },
+          from: {
+            transform: "rotate(90deg) rotatex(50deg) rotatey(-40deg)",
+          },
+          to: {
+            transform: "rotate(0deg) rotatex(0deg) rotatey(0deg)",
+          },
         },
       },
     },

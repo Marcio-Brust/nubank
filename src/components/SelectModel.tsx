@@ -4,7 +4,7 @@ import { PropsCard } from "@/context/PropsCardContext";
 import React from "react";
 
 const SelectModel = () => {
-  const { setPosition, setActive, disabled } = PropsCard();
+  const { position, setPosition, setActive, disabled } = PropsCard();
 
   return (
     <section className="mt-8 grid gap-2">
@@ -13,8 +13,7 @@ const SelectModel = () => {
         <button
           className="p-2 grid place-items-center bg-purple-300 hover:bg-purple-400 active:outline-2 active:outline active:outline-purple-400  w-24 rounded-lg"
           onClick={() => {
-            setPosition(false);
-            setActive(false);
+            if (position) setPosition(false);
           }}
           disabled={disabled}
         >
@@ -24,7 +23,6 @@ const SelectModel = () => {
           className="p-2 grid place-items-center bg-purple-300 hover:bg-purple-400 active:outline-2 active:outline active:outline-purple-400  w-24 rounded-lgw-24  rounded-lg"
           onClick={() => {
             setPosition(true);
-            setActive(false);
           }}
           disabled={disabled}
         >
