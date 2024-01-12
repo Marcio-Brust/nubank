@@ -18,7 +18,7 @@ const CardNubank = () => {
           }  max-sm:fixed grid place-content-center `}
         >
           <div
-            className={`w-40 h-80 rounded-xl ${colors} shadow-black shadow-2xl p-2 grid 
+            className={`w-40 h-80 rounded-xl ${colors} shadow-black shadow-2xl p-2 grid max-sm:relative
           
           ${position ? "animate-vertical" : ""}
          `}
@@ -68,7 +68,7 @@ const CardNubank = () => {
             className={`w-80 h-40 rounded-xl ${colors} shadow-black shadow-2xl p-2 grid  ${
               active ? "animate-float" : ""
             }
-        
+            max-sm:relative
         `}
           >
             <div className="text-white  grid justify-end ">
