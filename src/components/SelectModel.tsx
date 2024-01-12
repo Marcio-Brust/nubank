@@ -4,7 +4,7 @@ import { PropsCard } from "@/context/PropsCardContext";
 import React from "react";
 
 const SelectModel = () => {
-  const { position, setPosition, setActive, disabled } = PropsCard();
+  const { position, setPosition, disabled } = PropsCard();
 
   return (
     <section className="mt-8 grid gap-2">
