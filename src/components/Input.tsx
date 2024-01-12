@@ -19,7 +19,7 @@ const Input = ({ label, ...props }: IPropsInput) => {
         id={label}
         type="text"
         placeholder="Digite seu nome"
-        maxLength={20}
+        maxLength={16}
         onClick={() => setActive(!active)}
         className="p-2 border-gray-300 border rounded-lg outline-purple-300"
         {...props}

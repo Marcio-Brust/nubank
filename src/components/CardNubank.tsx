@@ -13,7 +13,7 @@ const CardNubank = () => {
     <section className="grid place-items-center  w-full max-sm:h-60">
       {position ? (
         <div
-          className={` w-40 h-80    ${
+          className={` w-10 h-10    ${
             active ? "animate-float" : ""
           }  max-sm:fixed grid place-content-center `}
         >
@@ -98,7 +98,9 @@ const CardNubank = () => {
                 height={0}
                 priority
               />
-              <p className="text-[12px] text-white font-semibold">{name}</p>
+              <p className="text-[12px] text-white font-semibold block">
+                {name}
+              </p>
             </div>
           </div>
         </div>
