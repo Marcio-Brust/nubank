@@ -30,7 +30,7 @@ const config: Config = {
       keyframes: {
         float: {
           "0%, 100%": { transform: "translatey(0)" },
-          "50%": { transform: "translatey(-50px)" },
+          "50%": { transform: "translatey(-4px)" },
         },
         floatVertical: {
           "0%, 100%": { transform: "translatey(0)" },

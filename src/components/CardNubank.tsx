@@ -15,7 +15,7 @@ const CardNubank = () => {
         <div
           className={` w-40 h-80    ${
             active ? "animate-float" : ""
-          }  max-sm:fixed`}
+          }  max-sm:fixed grid place-content-center `}
         >
           <div
             className={`w-40 h-80 rounded-xl ${colors} shadow-black shadow-2xl p-2 grid 
@@ -62,7 +62,7 @@ const CardNubank = () => {
         <div
           className={` w-80 h-40   ${
             position === undefined ? "" : !position ? "animate-horizontal" : ""
-          }  max-sm:fixed`}
+          }  max-sm:fixed grid place-content-center `}
         >
           <div
             className={`w-80 h-40 rounded-xl ${colors} shadow-black shadow-2xl p-2 grid  ${
