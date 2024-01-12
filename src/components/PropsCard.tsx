@@ -1,6 +1,6 @@
 import Input from "./Input";
-import SelectColor from "./SelectColor";
-import SelectModel from "./SelectModel";
+import SelectColor from "./PropsCard/SelectColor";
+import SelectModel from "./PropsCard/SelectModel";
 
 const PropsCard = () => {
   return (
