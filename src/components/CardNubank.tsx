@@ -10,7 +10,7 @@ const CardNubank = () => {
   const { name, active, colors, position } = PropsCard();
 
   return (
-    <section className="grid place-items-center  w-full max-sm:h-60">
+    <section className="flex justify-center items-center  w-full max-sm:h-60">
       {position ? (
         <div
           className={` w-10 h-10    ${
@@ -18,7 +18,7 @@ const CardNubank = () => {
           }  max-sm:fixed grid place-content-center `}
         >
           <div
-            className={`w-40 h-80 rounded-xl ${colors} shadow-black shadow-2xl p-2 grid max-sm:relative
+            className={`w-40 h-80 rounded-xl ${colors} shadow-black shadow-2xl p-2 grid 
           
           ${position ? "animate-vertical" : ""}
          `}
@@ -62,13 +62,13 @@ const CardNubank = () => {
         <div
           className={` w-80 h-40   ${
             position === undefined ? "" : !position ? "animate-horizontal" : ""
-          }  max-sm:fixed grid place-content-center `}
+          }  max-sm:fixed`}
         >
           <div
             className={`w-80 h-40 rounded-xl ${colors} shadow-black shadow-2xl p-2 grid  ${
               active ? "animate-float" : ""
             }
-            max-sm:relative
+            
         `}
           >
             <div className="text-white  grid justify-end ">
