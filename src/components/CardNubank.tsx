@@ -98,7 +98,7 @@ const CardNubank = () => {
                 height={0}
                 priority
               />
-              <p className="text-[12px] text-white font-semibold block">
+              <p className="text-[12px] text-white font-semibold break-all">
                 {name}
               </p>
             </div>

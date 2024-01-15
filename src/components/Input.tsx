@@ -21,7 +21,7 @@ const Input = ({ label, ...props }: IPropsInput) => {
         placeholder="Digite seu nome"
         maxLength={16}
         onClick={() => setActive(!active)}
-        className="p-2 border-gray-300 border rounded-lg outline-purple-300"
+        className="p-2 border-gray-300 border rounded-lg outline-purple-300 "
         {...props}
         onChange={({ target }) => setName(target.value.toUpperCase())}
       />
